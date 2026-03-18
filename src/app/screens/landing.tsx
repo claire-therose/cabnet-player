@@ -31,7 +31,7 @@ export function LandingScreen () {
               Modern Electron Development
             </Badge>
             <h1 className='text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight'>
-              Build Desktop Apps with
+              Destroy the Universe
               <span className='bg-gradient-to-r from-blue-400 to-blue-400 bg-clip-text text-transparent'>
                 {' '}
                 Lightning Speed

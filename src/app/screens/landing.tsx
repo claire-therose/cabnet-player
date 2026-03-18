@@ -31,11 +31,8 @@ export function LandingScreen () {
               Modern Electron Development
             </Badge>
             <h1 className='text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight'>
-              Destroy the Universe
-              <span className='bg-gradient-to-r from-blue-400 to-blue-400 bg-clip-text text-transparent'>
-                {' '}
-                Lightning Speed
-              </span>
+              Destroy the Universe with
+              <span className='bg-linear-to-r from-green-800 to-blue-600'> Lightning Speed</span>
             </h1>
             <p className='text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed'>
               The ultimate Electron-Forge boilerplate with React, Vite, and TypeScript. Get your desktop application up

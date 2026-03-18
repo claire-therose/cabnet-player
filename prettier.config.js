@@ -15,7 +15,7 @@ export default {
   singleAttributePerLine: false,
   singleQuote: true,
   tabWidth: 2,
-  trailingComma: 'es5',
+  trailingComma: 'none',
   useTabs: false,
   vueIndentScriptAndStyle: false,
   plugins: ['prettier-plugin-space-before-function-paren'],

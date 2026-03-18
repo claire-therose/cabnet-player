@@ -27,7 +27,7 @@ function useEventListener<K extends keyof DocumentEventMap> (
 function useEventListener<
   KW extends keyof WindowEventMap,
   KH extends keyof HTMLElementEventMap,
-  T extends HTMLElement | undefined = undefined,
+  T extends HTMLElement | undefined = undefined
 > (
   eventName: KW | KH,
   handler: (event: WindowEventMap[KW] | HTMLElementEventMap[KH] | Event) => void,

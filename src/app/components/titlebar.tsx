@@ -24,7 +24,7 @@ export default function Titlebar () {
 
   return (
     <div onDoubleClick={handleDoubleClick} className='window-titlebar'>
-      {__WIN32__ && (
+      {__LINUX__ && (
         <>
           <Menu />
           <WindowControls windowState={windowState} />

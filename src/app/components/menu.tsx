@@ -2,7 +2,6 @@ import { useEventListener } from '@/app/hooks';
 import { MenuChannels } from '@/channels/menuChannels';
 import { fixAcceleratorText } from '@/menu/accelerators';
 import menuList from '@/menu/appMenu';
-import appLogo from 'assets/icons/icon.png';
 
 import { createRef, useMemo, useRef } from 'react';
 
@@ -90,11 +89,6 @@ export default function Menu () {
 
   return (
     <section className='window-titlebar-menu'>
-      {/* Titlebar icon */}
-      <section className='window-titlebar-icon'>
-        <img src={appLogo} alt='App logo' />
-      </section>
-
       {menuList.map(({ label, submenu }, menuIndex) => {
         return (
           <div className='menu-item' key={`menu_${menuIndex + 1}`}>

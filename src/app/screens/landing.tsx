@@ -30,7 +30,7 @@ export function LandingScreen () {
               <Sparkles className='w-3 h-3 mr-1' />
               Modern Electron Development
             </Badge>
-            <h1 className='text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight'>
+            <h1 className='text-5xl lg:text-7xl font-noto-sans font-bold text-white mb-6 leading-tight'>
               Destroy the Universe with
               <span className='bg-linear-to-r from-green-800 to-blue-600'> Lightning Speed</span>
             </h1>

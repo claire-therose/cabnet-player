@@ -3,7 +3,7 @@ import { MenuChannels } from '@/channels/menuChannels';
 
 import { useState } from 'react';
 
-import Menu from './menu';
+import TitlebarLogo from './titlebar-logo';
 import WindowControls from './window-controls';
 
 import type { WindowState } from '@/windowState';
@@ -23,10 +23,13 @@ export default function Titlebar () {
   }
 
   return (
-    <div onDoubleClick={handleDoubleClick} className='window-titlebar'>
+    <div
+      onDoubleClick={handleDoubleClick}
+      className='window-titlebar window-topbar flex items-stretch h-8 bg-zinc-900 select-none sticky top-0 z-50'
+    >
       {__LINUX__ && (
         <>
-          <Menu />
+          <TitlebarLogo />
           <WindowControls windowState={windowState} />
         </>
       )}

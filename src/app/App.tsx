@@ -6,6 +6,8 @@ import { MenuChannels } from '@/channels/menuChannels';
 
 import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 
+import Menubar from './components/menubar';
+
 const onMenuEvent = (_: Electron.IpcRendererEvent, channel: string, ...args: unknown[]) => {
   electron.ipcRenderer.invoke(channel, args);
 };
@@ -18,6 +20,7 @@ export default function App () {
       <Router>
         <div className='flex flex-col h-full'>
           <Titlebar />
+          <Menubar />
           <main className='flex-1 overflow-auto'>
             <Routes>
               <Route path='/' Component={LandingScreen} />

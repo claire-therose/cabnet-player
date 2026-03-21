@@ -170,16 +170,8 @@
     -webkit-app-region: drag;
   }
 
-  .window-titlebar-icon {
-    @apply px-2;
-  }
-
   .window-topbar > section {
     @apply flex items-center;
-  }
-
-  .window-titlebar-icon img {
-    @apply w-5 h-5;
   }
 
   /* Menu Styles */

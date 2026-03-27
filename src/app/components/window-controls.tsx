@@ -25,7 +25,7 @@ export default function WindowControls ({ windowState }: IWindowControlsProps) {
   );
 
   return (
-    <section className={classNames('absolute right-0 top-0 h-8')}>
+    <section className={classNames('h-8')}>
       <div className='flex mr-0.5'>
         <ControlButton
           name='minimize'

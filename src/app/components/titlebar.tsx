@@ -4,6 +4,7 @@ import { MenuChannels } from '@/channels/menuChannels';
 import { useState } from 'react';
 
 import TitlebarLogo from './titlebar-logo';
+import TitlebarMediaTitle from './titlebar-media-title';
 import WindowControls from './window-controls';
 
 import type { WindowState } from '@/windowState';
@@ -29,7 +30,9 @@ export default function Titlebar () {
     >
       {__LINUX__ && (
         <>
+          {/* Since TitlebarMediaTitle has the grow modifier, WindowControls will always be on the far right */}
           <TitlebarLogo />
+          <TitlebarMediaTitle />
           <WindowControls windowState={windowState} />
         </>
       )}

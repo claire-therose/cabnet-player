@@ -93,7 +93,7 @@ export default function Menu () {
         return (
           <div className='flex-col' key={`menu_${menuIndex + 1}`}>
             <button
-              className='h-8 hover:bg-secondary text-[13px] px-3'
+              className='h-8 hover:bg-secondary hover:inset-shadow-[1px_1px_0px] inset-shadow-zinc-400 text-[13px] px-3'
               type='button'
               tabIndex={0}
               onClick={(e) => showMenu(menuIndex, e)}
@@ -104,7 +104,10 @@ export default function Menu () {
             >
               {label}
             </button>
-            <div className='menu-popup fixed bg-popover z-10000 min-w-20' ref={menusRef[menuIndex]}>
+            <div
+              className='menu-popup fixed bg-popover z-10000 min-w-20 inset-shadow-[1px_1px_0px] inset-shadow-zinc-400'
+              ref={menusRef[menuIndex]}
+            >
               {Array.isArray(submenu) &&
                 submenu.map((menuItem, menuItemIndex) => {
                   if (menuItem.type === 'separator') {
@@ -116,7 +119,7 @@ export default function Menu () {
                   return (
                     <button
                       key={`menu_${menuIndex}_popup_item_${menuItemIndex + 1}`}
-                      className='flex py-1.5 pl-7 pr-4 justify-between hover:bg-accent hover:text-accent-foreground hover:cursor-pointer w-full text-[13px]'
+                      className='flex py-1.5 pl-7 pr-4 justify-between hover:bg-accent hover:text-accent-foreground hover:cursor-pointer mix-blend-lighten w-full text-[13px]'
                       onMouseDown={(e) => e.preventDefault()}
                       onKeyDown={(e) => e.preventDefault()}
                       type='button'

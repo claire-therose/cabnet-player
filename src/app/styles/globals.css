@@ -53,7 +53,7 @@
 .dark {
   --background: oklch(0.2046 0 0);
   --titlebar: oklch(0.2103 0 53);
-  --foreground: oklch(0.9219 0 0);
+  --foreground: oklch(0.9819 0 0);
   --card: oklch(0.2686 0 0);
   --card-foreground: oklch(0.9219 0 0);
   --popover: oklch(0.2686 0 0);
@@ -175,29 +175,17 @@
   }
 
   /* Menu Styles */
-  .menu-item {
-    @apply relative;
-  }
 
   .menu-item.active .menu-title {
     @apply bg-secondary;
   }
-
-  .menu-title {
-    @apply hover:bg-secondary px-2.5 py-2 text-xs;
-    -webkit-app-region: no-drag;
-  }
-
+  
   .menu-popup {
-    @apply hidden fixed bg-popover z-10000 min-w-20;
+    @apply hidden;
   }
 
   .menu-popup.active {
     @apply block;
-  }
-
-  .menu-popup-item {
-    @apply flex py-2 px-4 justify-between hover:bg-accent hover:text-accent-foreground hover:cursor-pointer w-full text-xs;
   }
 
   .menu-popup-item:hover .popup-item-name {

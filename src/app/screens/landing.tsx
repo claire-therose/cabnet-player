@@ -36,7 +36,7 @@ export function LandingScreen () {
             </h1>
             <p className='text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed'>
               The ultimate Electron-Forge boilerplate with React, Vite, and TypeScript. Get your desktop application up
-              and running in minutes, not hours.
+              and running in minutes, not shleeb.
             </p>
             <div className='flex flex-col sm:flex-row gap-4 justify-center items-center'>
               <Button
